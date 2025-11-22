@@ -8,7 +8,7 @@ In the first period, I was focused on software engineering but I didn't like it 
 
 Then, I rented my first own server and stepped into self-hosted interest. Used my own mail server, vpn server, cloud server (nextcloud) as a hobby. Indeed, I still use these self-hosted services in my daily life. I saw that these are the things that I like most.
 
-Then, I saw that this are is much more used by companies that have their own servers. Others are using cloud providers like AWS, Azure or GCP. So I also dive into this area. I got my Azure Fundementals (AZ-900) certificate. But this is not enough. Also, realized a technology called kubernetes is on the trend and I was sure that I should also dive into DevOps world where I can both enjoy and be up-to-date with the new technologies.
+Then, I saw that this area is much more used by companies that have their own servers. Others are using cloud providers like AWS, Azure or GCP. So I also dive into this area. I got my Azure Fundementals (AZ-900) certificate. But this is not enough. Also, realized a technology called kubernetes is on the trend and I was sure that I should also dive into DevOps world where I can both enjoy and be up-to-date with the new technologies.
 
 Finally, I decided to go with this career and share my theoretical and hands-on progress in this repository to make this journay to document my growth and contribute to the community.
 

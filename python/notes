@@ -1,0 +1,79 @@
+# source
+
+https://www.w3schools.com/python/
+
+
+# notes
+
+- relesaed in 1991 by Dutch programmer
+- can be written as procedural, OOP and functional
+- new line means end of command for this line
+- print("hey", end=" ") => you can end the print with any character. in this example it is white space.
+- print(2+2, "2 + 2", 2*3) => prints: 4 2 + 2 6        (see that it puts white space between them)
+- cast by str(), int(), float(). check the type by type(x)
+- cannot use these as variable names: 2myvar = "John"       my-var = "John"          my var = "John"
+
+- pascal case: MyNameIsYusuf
+- snake case: my_name_is_yusuf (mostly used in python)
+- you can define a global value also in a function by global x; x = 5;  But that function must be called before that value is used.
+
+- built-in data types:
+- str, int, float, complex, list, tuple, range, dict, set, frozenset, bool, bytes, bytearray, memoryview, NoneType
+- there is no char type, it is simply a str with length 1
+- "str1" in "str2" returns true if str1 is in str2  or false
+- "str1" not in "str2"
+- slicing: x[2:5] means start from 2 to 5 but 5 is not inclusive
+- slicing counting backwards: x[-5:-2] means from last 5th to last 2
+- in python, we cannot combine string and int like in java
+- can do formating like f"my name is {name}",  f"the price is {price:.2f} dollars"
+- some values are false: "", 0, (), [], {}, None
+- isinstance(x, int) returns true or false
+
+- / always return float. for float division use //
+- you can chain like 1 < x < 10
+- logical operators: and, or, not
+- x is y: return True if x and y pointing to the same object
+- in python x == y is True even these are two different object with same list content
+- x in y: returns True if x is included in y.
+
+- list: changable, ordered, allows duplicate
+- tupple: unchangable, ordered, allows duplicate
+- set: unchangable(* you cannot modify item, but add or remove), unordered, no duplicate
+- dictionary: changable, ordered, no duplicate
+
+- some_list[2:5] => returns a new list from item 2 to item 5 (exclusive)
+- some_list.insert(index, item), some_list.append(item)
+- some_list.extend(another_list | tupple | dict): add given items to our list
+- some_list.remove(item): removes the first occurence
+- some_list.pop(index): remove the item with this index         same as del some_list[index]
+- some_list.pop() remove the last item
+- del some_list: delete the entire list
+- some_list.clear(): clear the entire list
+- list comprehension:   y = [item for item in list if "a" in item]
+- some_list.reverse(): reverse the list
+- some_list.copy(): to copy a list      or use another_list = list(some_list)
+- some_list.sort(): sort a list
+- some_list.sort(reverse=True): sort descending
+- some_list.sort(key = my_func): sort according to my_func
+- sort function first sorts capitalized chars, to avoid this you can use some_list.sort( key = str.lower)
+
+- you can merge lists by + operator
+- tuples mostly used by returning multiple values even though list can be used too.
+- tuples are unchangable version of lists, but they are faster. To be on the safe side if the data will not change use tuple then
+- my_tuple * 2, appends itself to the end
+
+
+- True and 1 is consideres as same value in sets, be careful! Samewise, False and 0 treated as same value.
+- my_set.update(another_set | tuple | list): include them to the set
+- my_set.add(item): add an item
+- my_set.remove(item) to remove an item, this will raise an error if the value is not in the set, use discard() instead
+- my_set.union(another_set+): take the union, you can also do this by union_set = my_set | another_set
+- my_set.intersection(another_set): returns the intersection, you can also use & operand
+- my_set.intersection_update(another_set): this does not return, directly updates the set
+- my_set.difference(another_set): returns only different items in my_set, or you can use - operand
+- my_set.smyetric_difference(another_set): returns only different items in both sets, you can use ^ operand
+- frozenset is the immutable version of normal sets
+
+- dicts are changable, ordered (after 3.7) and no duplicate. If you have duplicate, last one will overrite the prvious value
+- the len of a dict is number of key-value pairs
+
