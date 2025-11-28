@@ -1,4 +1,7 @@
-from platform import system
+import subprocess
 
 
-print(system())
+a = subprocess.run(["ping", "-c", "1", "google.com"], capture_output=True)
+
+
+print(a)
