@@ -93,6 +93,26 @@ dotnet nuget add source http://192.168.1.175:8081/repository/nuget-group/index.j
 dotnet add package MyDotnetLib --version 1.0.0
 
 
+## Example with Docker
+
+
+- nano /etc/docker/daemon.json, paste this to allow http access if no nginx. These are ip and port of nexus server.
+{
+  "insecure-registries" : ["<ip>:<port>"]
+}
+
+
+
+- Set http connector to a port in the docker repo in nexus
+
+- docker login <ip>:<port>
+- docker tag <local-image> <ip>:<port>/<remote-image-name>
+- docker push <ip>:<port>/<remote-image-name>
+
+
+- docker pull <ip>:<port>/<remote-image-name>
+
+
 
 ## Summary
 

@@ -11,7 +11,7 @@
 - Truth: No test = No CI
 - Also, when there is a new feature, dev also must commit its tests. However, you might think it is nonsense if he deos not. But actually, even he does not commit new tests, with CI we test the integration with older test files so that any bad change in the code make other tests fail.
 
-- on GitHub you can simply use GitHub Actions for CI. Just find a template and change parts according to your needs. Lets see some of the keywords. on: when to trigger the job (generally when I push). jobs: what to run. steps: specific commands. uses: use a plugin like actions/setup-python@v4. run: runs code directly in the machine.
+- on GitHub you can simply use GitHub Actions for CI. Just find a template and change parts according to your needs. Lets see some of the keywords. on: when to trigger the job (generally when I push or merge). jobs: what to run. steps: specific commands. uses: use a plugin like actions/setup-python@v4. run: runs code directly in the machine.
 
 - I created an example config. In that example, we have two jobs: CI and then CD. In the CD part, we first set where to run this code (ubuntu-lates is ok). Then in the steps container, there is "uses: actions/checkout@v3", this line checks out to the triggered commit by using checkout plugin version 3. Then we add a name for next one (just for readibility in the config and Github Actions page) and it uses setup-python version 4 plugin to setup python environment. With "with" keyword, we determine which python version.
 - Later, we first install our dependencies by using the requirements.txt. This time we directly run code on the ubuntu machine, not using a plugin.
