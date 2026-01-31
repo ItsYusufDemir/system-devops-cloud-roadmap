@@ -30,7 +30,7 @@ Here is the roadmap I will probably follow. I will not be so strict about the or
 
 - System Engineering: On-premise system design (Virtualization, GitLab, Nexus, Local CA etc)                         ✅ (Proxmox, Nexus, Bitwarden, Wireguard)
 
-- Docker (build/run images, Docker Compose)
+- Docker (build/run images, Docker Compose)             ✅
 
 - CI/CD (GitHub Actions or similar)                                        ✅ (CI/CD, CI/CD pipeline, GitHub Actions)
 
