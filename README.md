@@ -26,7 +26,7 @@ Let me briefly describe them. Theory: learning from docs and tutorials. Summariz
 
 Here is the roadmap I will probably follow. I will not be so strict about the order to make this fun.
 
-- Linux + Networking + Git + Bash/Python                                   ✅ (Python)
+- Linux + Networking + Git + Bash/Python                                   ✅
 
 - System Engineering: On-premise system design (Virtualization, GitLab, Nexus, Local CA etc)                         ✅ (Proxmox, Nexus, Bitwarden, Wireguard)
 
@@ -40,10 +40,10 @@ Here is the roadmap I will probably follow. I will not be so strict about the or
 
 - Ansible (configure servers, deploy apps)
 
-- Kubernetes: Local cluster → Deploy app → Helm/Kustomize, Managed K8s in cloud (EKS/AKS/GKE)
+- Kubernetes: Local cluster → Deploy app → Helm/Kustomize, Managed K8s in cloud (EKS/AKS/GKE)           ✅(On-prem k3s cluster, deployed eShop project)
 
-- Monitoring, logging, security basics
+- Monitoring, logging, security basics              ✅ (Prometheus + Grafana)
 
-- 1–2 full projects combining all of the above.
+- 1–2 full projects combining all of the above.     ✅ (eShop project)
 
 I will create directories and subdirectories for each main subjects and its sub-subjects. There will be notes and hands-on products in each of them.
